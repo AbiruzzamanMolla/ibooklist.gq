@@ -2,7 +2,7 @@ $(document).ready(function () {
     $.getJSON('tbl_books.json', function (data) {
         var resData = data;
         var table = "";
-        
+
         $.each(resData, function (key, value) {
             var id = value.id;
             var name = value.name;
@@ -23,7 +23,7 @@ $(document).ready(function () {
             table += "<td><a href='" + buy_link + "'>Buy here</a></td></tr>";
 
         });
-         $('#example tbody').html(table);
+        $('#example tbody').html(table);
     });
 });
 $(document).ready(function () {
