@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $.getJSON('tbl_books.json', function (data) {
-        $('#example').DataTable({
+        $('#booklist').DataTable({
             "data": data,
             "paging": true,
             "columns": [{
